@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  background: tomato;
+}
+.container {
+  display: flex;
+}
+.main {
+  background: pink;
+  width: 70%;
+}
+footer {
+  background: plum;
+}

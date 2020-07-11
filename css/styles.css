@@ -1,42 +1,74 @@
 body{
-  
-  margin-top: 60px;
+  width: 1000px;
+  margin: auto;
+  margin-top: 10px;
   color: gray;
   background: rgb(255, 255, 255);
-  text-align: center;
   font-family:'Century Gothic','M PLUS Rounded 1c', sans-serif;
+  
+}
+header{
+  display: flex;
+  justify-content: center; 
+ 
+}
+header img{
+  margin:0;
 }
 
-.pic{
-  position: relative;/*相対配置*/
+/* menuリスト */
+.menu {
+  list-style: none;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 20px;
 }
-a{
-  text-decoration: none; /* link下の線を無くす */
+ 
+.menu li {
+  display: inline-block;
+  padding: 7px 5px;
+  border: 2px solid #333;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 10px;
+  
 }
-.pic .menu{
-  position: absolute;/*絶対配置*/
-  color: white;
-  top: 200px;
-  left: 700px;
-  font-size: 30px;
-  font-weight: bold;
+ .menu li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  padding: 20px;
 }
-.pic img {
-  width: 900px;
-  height: 520px;
-  margin: 0;
-
+.menu li:hover{
+  background:#e890b9;
 }
-
 .container{
-  width: 900px;
-  height: 500px;
-  margin: 0 auto;
+  text-align: center;
+  margin: 30px auto;
   position: relative;
   padding: 10px ;
 }
+.container >img{
+  width: 1000px;
+  height: 600px;
+  margin-bottom: 30px;
+}
+.container h1{
+  font-size: 18px;
+  color: rgb(75, 75, 75);
+}
+.box{
+  width: 1000px;
+  
+}
+.box img{
+  width: 400px;
+  height: 300px;
+}
+
 
 
 footer {
-  background: plum;
+  background: ；
 }

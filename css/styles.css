@@ -3,7 +3,7 @@ body{
   margin: auto;
   margin-top: 10px;
   color: gray;
-  background: rgb(255, 255, 255);
+  background: rgb(233, 233, 233);
   font-family:'Century Gothic','M PLUS Rounded 1c', sans-serif;
   
 }
@@ -47,7 +47,7 @@ header img{
   text-align: center;
   margin: 30px auto;
   position: relative;
-  padding: 10px ;
+  padding: 10px;
 }
 .container >img{
   width: 1000px;
@@ -58,17 +58,74 @@ header img{
   font-size: 18px;
   color: rgb(75, 75, 75);
 }
+.container h1:first-letter{
+  font-size: 30px;
+  color: #3a3a3a;
+}
 .box{
   width: 1000px;
+  margin-bottom: 60px;
   
+}
+.box1, .box2{
+  background:rgb(255, 255, 255);
+  margin-left: 10px;
+  padding-bottom: 30px;
+}
+.boxs{
+  display: flex;
+  justify-content: center; 
 }
 .box img{
   width: 400px;
   height: 300px;
 }
+.box1:hover img{
+  opacity: 0.6;
+}
+.box2:hover img{
+  opacity: 0.6;
+}
 
+.profile ul{
+  list-style: none;
+}
+.profile img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.profilebox{
+  width: 500px;
+  background: white;
+  margin: auto;
+  padding: 30px;
+}
 
+.contact{
+  padding-top: 60px;
+}
 
-footer {
-  background: ；
+.footer {
+  text-align: center;
+  bottom: 0;
+}
+.footer ul{
+  color: #3a3a3a;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer li {
+  display: inline-block;
+  padding: 7px 5px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.footer li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  padding: 5px;
 }

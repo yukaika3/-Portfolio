@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>yuk_portfolio</title>
+    <script src="./jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <header>
+      <div id="home"></div>
       <img src="img/logo.png" alt="PC">
         <ul class="menu">
           <li><a href="#home"  title="home">Home</a></li>
@@ -18,29 +20,60 @@
     </header>
     <div class="container">
       <img src="img/PC.jpg" alt="PC">
-      <div id="home">
-      </div>
 
       <div class="box" id="works" > 
         <h1>works</h1>
         <p>作成したものです</p>
-        <img src="img/vege.jpg" alt="vege">
-        <img src="img/make.jpg" alt="make">
-
+        <p>画像をクリックすると作品ページへ飛びます。</p>
+        <div class="boxs">
+          <div class="box1">
+            <img src="img/PC.jpg" alt="portforio">
+            <h1>Portforio</h1>
+            <p>自身のポートフォリオサイトです</p>
+            <p>html/css</p>
+            <a href="https://github.com/yukaika3/yuk_portfolio_site">github</a>
+          </div>
+          <div class="box2">
+            <img src="img/vege.jpg" alt="vege">
+            <h1>VegeVegeSearch</h1>
+            <p>野菜の名前から栄養素を検索できるサイトです</p>
+            <p>html/css/javascript</p>
+            <a href="">github</a>
+          </div>
+          
+        </div>
       </div>
-      <div id ="profile" >
-        <h1>profile</h1>
 
+      <div class="profile" id ="profile" >
+        <h1>Profile</h1>
+          <div class="profilebox">
+            <img src="img/my.jpg" alt="make">
+              <ul>
+                <li>名前： Yuuka</li>
+                <li>年齢：21</li>
+                <li>出身：福岡（現在は千葉）</li>
+                <li>学歴：麻生情報ビジネス専門学校</li>
+              </ul>
+          </div>
       </div>
 
-      <div id ="contact" >
+      <div class ="contact" id ="contact" >
         <h1>contact</h1>
 
       </div>
 
     </div>
   
-    <footer>footer</footer>
+    <footer class ="footer">
+      <ul>
+        <li><a href="#home"  title="home">Home</a></li>
+        <li><a href="#works"  title="code">Works</a></li>
+        <li><a href="#profile" title="user">Profile</a></li>
+        <li><a href="#contact"  title="mail">Contact</a></li>
+      </ul>
+    </footer>
     </div>
+
+    <script></script>
   </body>
 </html>

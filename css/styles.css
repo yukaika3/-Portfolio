@@ -60,6 +60,9 @@ header img{
   
 }
 
+.menu a{
+  transition: all .3s;
+}
 .menu li {
   position: relative;
   display: inline-block;
@@ -81,7 +84,7 @@ header img{
   z-index: 2;
   content: '';
   transition: all .3s;
-}
+} 
 .menu li a::before {
   border-top: 2px solid #e76c9b;
   border-bottom: 2px solid #e76c9b;
@@ -134,11 +137,13 @@ header img{
   justify-content: center; 
 }
 .boxs a{
-  color: #3a3a3a;
+  color: #1b1b1b;
   text-decoration: none;
+  font-weight: 500;
   font-size: 20px;
-
-  
+}
+.boxs a:hover{
+  color: #888888;
 }
 .box img{
   width: 400px;
@@ -181,7 +186,8 @@ header img{
 
 .footer {
   text-align: center;
-  bottom: 0;
+  height: 100%;
+
 }
 .footer ul{
   overflow: hidden;

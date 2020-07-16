@@ -133,6 +133,13 @@ header img{
   display: flex;
   justify-content: center; 
 }
+.boxs a{
+  color: #3a3a3a;
+  text-decoration: none;
+  font-size: 20px;
+
+  
+}
 .box img{
   width: 400px;
   height: 300px;
@@ -163,12 +170,20 @@ header img{
   padding-top: 60px;
 }
 
+.contactbox{
+  width: 500px;
+  height: 200px;
+  background: white;
+  margin: auto;
+  padding:30px;
+
+}
+
 .footer {
   text-align: center;
   bottom: 0;
 }
 .footer ul{
-  color: #3a3a3a;
   overflow: hidden;
   justify-content: center;
   margin-top: 20px;
@@ -176,7 +191,7 @@ header img{
 .footer li {
   display: inline-block;
   padding: 7px 5px;
-  color: #333;
+  color: rgb(224, 224, 224);
   text-decoration: none;
   text-align: center;
 }

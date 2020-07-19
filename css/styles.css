@@ -1,6 +1,6 @@
 
 body{
-  width: 80%;
+  width: 100%;
   margin: auto;
   margin-top: 10px;
   color: gray;
@@ -51,7 +51,9 @@ header img{
 }  */
 .menu{
   margin-top: 20px;
-  
+  width: 50%;
+  max-width: 50%;
+  height: auto;
 }
 
 .menu a{
@@ -111,8 +113,8 @@ header img{
   transform: scale(1);
 }
 .container{
-  width: 80%;
-  max-width: 80%;
+  width: 50%;
+  max-width: 50%;
   height: auto;
   text-align: center;
   margin: 30px auto;
@@ -142,6 +144,9 @@ header img{
   background:rgb(255, 255, 255);
   margin-left: 10px;
   padding-bottom: 30px;
+  width: 100%;
+  max-width: 100%;
+  height:auto;
 }
 .boxs{
   display: flex;
@@ -157,8 +162,10 @@ header img{
   color: #888888;
 }
 .box img{
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+  height:auto;
 }
 .box1:hover img{
   opacity: 0.6;
@@ -171,12 +178,13 @@ header img{
   list-style: none;
 }
 .profile img{
-  width: 200px;
-  height: 200px;
+  width: 30%;
+  margin: auto;
+  max-width: 30%;
   border-radius: 50%;
 }
 .profilebox{
-  width: 500px;
+  width: 60%;
   background: white;
   margin: auto;
   padding: 30px;
@@ -184,11 +192,11 @@ header img{
 
 .contact{
   padding-top: 60px;
+  
 }
 
 .contactbox{
-  width: 500px;
-  height: 200px;
+  width: 60%;
   background: white;
   margin: auto;
   padding:30px;
@@ -243,12 +251,21 @@ header img{
   opacity: 0.7;
 }
 
-@media screen and (max-width:480px) {
-
-  .container{
-    width: 100%;
-    max-width: 100%;
-    height:auto;
+@media screen and (max-width:767px) {
+.body{
+  width: 100%;
+}
+.container{
+  width: 90%;
+  max-width: 90%;
+  height: auto;
+  text-align: center;
+  margin: 30px auto;
+  position: relative;
   } 
+.boxs{
+   display: block;
+
+ }
  
 }

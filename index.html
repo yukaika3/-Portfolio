@@ -14,14 +14,24 @@
     <header>
       <div id="home"></div>
       <a href=""><img src="img/logo.png"title="home" alt="logo"></a>
-    
-        <ul class="menu">
-          <li><a href="#home"  title="home"> <i class="fas fa-home"></i> Home</a></li>
-          <li><a href="#works"  title="works"><i class="fas fa-laptop-code"></i> Works</a></li>
-          <li><a href="#profile" title="profile"><i class="fas fa-user"></i> Profile</a></li>
-          <li><a href="#contact"  title="mail"><i class="far fa-envelope"></i> Contact</a></li>
-        </ul>
+      <nav>
+      <div class="Toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="#home"  title="home"> <i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#works"  title="works"><i class="fas fa-laptop-code"></i> Works</a></li>
+            <li><a href="#profile" title="profile"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="#contact"  title="mail"><i class="far fa-envelope"></i> Contact</a></li>
+          </ul>
+        </nav>
     </header>
+
+
     <div class="container">
       <img src="img/PC.jpg" alt="PC">
 
@@ -117,16 +127,11 @@
     </script>
     <script>
       $(function() {
-          $('.hamburger').click(function() {
-              $(this).toggleClass('active');
-      
-              if ($(this).hasClass('active')) {
-                  $('.menu').addClass('active');
-              } else {
-                  $('.menu').removeClass('active');
-              }
-          });
-      });
+        $('.Toggle').click(function() {
+      $(this).toggleClass('active');
+      $('.menu').toggleClass('open');
+    });
+    });
     </script>
   </body>
 </html>

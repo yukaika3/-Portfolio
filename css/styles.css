@@ -12,49 +12,23 @@ body{
   text-align: center;
 }
 header{
-  display: flex;
-  justify-content: center; 
+ 
  
 }
 header img{
-  width: 100%;
-  max-width: 100%;
+  width: 15%;
+  max-width: 15%;
+  min-width: 200px;
   height: auto;
 }
 
-/* menuリスト */
-/* .menu {
-  list-style: none;
-  overflow: hidden;
-  justify-content: center;
-  margin-top: 20px;
-}
- 
-.menu li {
-  display: inline-block;
-  padding: 7px 5px;
-  border: 1px solid #333;
-  color: #333;
-  text-decoration: none;
-  text-align: center;
-  margin-left: 10px;
-  
-}
- .menu li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  padding: 20px;
-}
-.menu li:hover{
-  background:#e890b9;
-}  */
-.menu{
+/* .menu{
   margin-top: 20px;
   width: 40%;
   max-width: 40%;
   height: auto;
 }
+/*  */
 
 .menu a{
   list-style: none;
@@ -73,13 +47,12 @@ header img{
 .menu li {
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 10px;
   color: rgba(80, 80, 80, 0.76);
   text-align: center;
   text-decoration: none;
   outline: none;
   transition: all .3s;
-  margin-left: 3px;
 }
 .menu li a::before,
 .menu li a::after {
@@ -109,7 +82,41 @@ header img{
 .menu li a:hover::after,
 .menu li a:hover::before {
   transform: scale(1);
-}
+} 
+
+nav{
+  display: flex;
+ }
+  
+ .Toggle{
+  display: none;
+ }
+ .menu{
+ width: 100%;
+ font-size:0.9em;
+ background-color: transparent;
+ margin:0 10px;
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+ }
+
+
+ /* .menu ul{
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+ }
+ .menu ul li a{
+  padding: 0 1em;
+  border-bottom: none;
+ }
+ .menu ul li a:hover{
+ background-color:transparent;
+ } */
+
+
 .container{
   width: 55%;
   max-width: 55%;
@@ -120,8 +127,8 @@ header img{
   
 }
 .container >img{
-  width: 100%;
-  max-width: 100%;
+  width: 96%;
+  max-width: 96%;
   height: auto;
 }
 .container h1{
@@ -279,8 +286,91 @@ header img{
    }
    .contactbox{
      width: 80%;
-} 
-}
+    } 
+
+
+    .menu ul li a {
+      display:block;
+      font-weight:bold;
+      padding: 0;
+      border-bottom: 1px dotted #CCC;
+      color:#333;
+      text-decoration:none;
+      margin:0;
+      }
+      .menu ul li a:hover
+      {background-color:rgba(0,0,0,0.5);
+      color:orange;
+      padding:0px;
+      }
+      
+      .menu{
+        text-align:center;
+        background-color:rgba(255,255,255,0.5);
+        transition: 0.5s ease;/*滑らかに表示*/
+        -webkit-transform: translateX(100%);/*画面より100%外へ押し出し非表示にさせる*/
+       
+      /*  transform: translateX(-100%);/*右から出す場合は、マイナス100%としてください*/
+       
+      }
+       
+      /*OPEN時の動き*/
+      .menu.open {
+       -webkit-transform: translateX(0%);
+       transform: translateX(0%);/*メニューを元の位置へ戻す*/
+       
+      }
+       
+      /*トグルボタンのスタイルを指定*/
+      .Toggle {
+          display: block;
+          position: fixed;    /* bodyに対しての絶対位置指定 */
+          width: 20%;
+          height: 20%;
+          cursor: pointer;
+          z-index: 3;
+          right:3px;
+          top:25px;
+      }
+       
+      .Toggle span {
+          display: block;
+          position: absolute;
+          width: 50px;
+          border-bottom: solid 4px #333;
+          -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+          -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+          transition: .35s ease-in-out;			/*変化の速度を指定*/
+       
+      }
+       /*各ボーダー少しずつずらす*/
+      .Toggle span:nth-child(1) {
+          top:5px;
+      }
+       .Toggle span:nth-child(2) {
+          top: 18px;
+      }
+       .Toggle span:nth-child(3) {
+          top: 32px;
+      }
+      .Toggle.active span:nth-child(1) {
+          top: 18px;
+      /* 1番目のspanをマイナス45度に */
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+      }
+       
+      /* 2番目と3番目のspanを45度に */
+      .Toggle.active span:nth-child(2),
+      .Toggle.active span:nth-child(3) {
+          top: 18px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          transform: rotate(45deg);
+      }
+  }
+
 /* スマホ用 */
 @media screen and (max-width:479px) {
 .body{

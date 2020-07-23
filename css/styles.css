@@ -307,18 +307,32 @@ nav{
       .menu{
         text-align:center;
         background-color:rgba(255,255,255,0.5);
-        transition: 0.5s ease;/*滑らかに表示*/
+        transition: .3s ease;/*滑らかに表示*/
         -webkit-transform: translateX(100%);/*画面より100%外へ押し出し非表示にさせる*/
-       
-      /*  transform: translateX(-100%);/*右から出す場合は、マイナス100%としてください*/
-       
+       transform: translateX(-100%);/*右から出す場合は、マイナス100%としてください*/
+       height: 0px;
       }
        
       /*OPEN時の動き*/
       .menu.open {
        -webkit-transform: translateX(0%);
        transform: translateX(0%);/*メニューを元の位置へ戻す*/
-       
+       display: block;
+       position: fixed;    /* bodyに対しての絶対位置指定 */
+       width: 100%;
+       height: 100%;
+       cursor: pointer;
+       z-index: 3;
+       right:3px; 
+      }
+     
+      ul{
+        padding-inline-start:0px;
+        list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
       }
        
       /*トグルボタンのスタイルを指定*/
@@ -326,7 +340,7 @@ nav{
           display: block;
           position: fixed;    /* bodyに対しての絶対位置指定 */
           width: 20%;
-          height: 20%;
+          height: 5%;
           cursor: pointer;
           z-index: 3;
           right:3px;
@@ -336,8 +350,8 @@ nav{
       .Toggle span {
           display: block;
           position: absolute;
-          width: 50px;
-          border-bottom: solid 4px #333;
+          width: 40px;
+          border-bottom: solid 2px #333;
           -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
           -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
           transition: .35s ease-in-out;			/*変化の速度を指定*/
